@@ -1,0 +1,33 @@
+.rating-circle {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+  
+.circle-bg {
+    fill: none;
+    stroke: #f2f2f2;
+    stroke-width: 2;
+}
+  
+  .circle {
+    fill: none;
+    stroke-linecap: round;
+    stroke-dashoffset: 0;
+    stroke-width: 2;
+    transition: stroke-dashoffset 1s ease-out;
+  }
+  
+  .circle-text {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-anchor: middle;
+  }
+  
+  .rating-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+  }
+  
