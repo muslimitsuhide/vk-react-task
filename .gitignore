@@ -1,0 +1,8 @@
+.idea/
+node_modules/
+*.pem
+src/build/
+service.txt
+.DS_Store
+server/ssk/
+dist/
