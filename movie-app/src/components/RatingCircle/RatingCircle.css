@@ -10,24 +10,24 @@
     stroke-width: 2;
 }
   
-  .circle {
+.circle {
     fill: none;
     stroke-linecap: round;
     stroke-dashoffset: 0;
     stroke-width: 2;
     transition: stroke-dashoffset 1s ease-out;
-  }
+}
   
-  .circle-text {
+.circle-text {
     font-family: Arial, sans-serif;
     font-size: 12px;
     text-anchor: middle;
-  }
+}
   
-  .rating-text {
+.rating-text {
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 1;
-  }
+}
   

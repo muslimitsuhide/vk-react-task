@@ -12,6 +12,7 @@
   
 .movie-details-content {
     color: white;
+    width: 100%;
 }
   
 .movie-open-title {
@@ -19,20 +20,25 @@
     font-weight: bold;
 }
   
-.movie-overview {
-    font-size: 18px;
-}
-  
-.movie-release-date {
+.movie-release-date, .movie-duration, .movie-overview {
     font-size: 16px;
+    color: #999;
+}
+
+.movie-release-date .date-formatter, .duration-num, .overview-text {
+    color: white;
 }
   
 .actor-cards {
     display: flex;
     flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 10px;
 }
 
-.show-all-actors-button {
+.show-all-actors-button, .show-all-movies-button {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
@@ -46,7 +52,21 @@
     transition: background-color 0.3s ease;
 }
   
-.show-all-actors-button:hover {
+.show-all-actors-button:hover, .show-all-movies-button:hover {
     background-color: #45a049;
 }
+
+.back-to-home-link {
+    color: white;
+    font-size: 1.5em;
+    padding-right: 20px;
+    transition: color 0.3s;
+}  
+
+.back-to-home-link:hover {
+    color: lightgray;
+}
   
+.back-to-home-link:active {
+    color: gray;
+}
